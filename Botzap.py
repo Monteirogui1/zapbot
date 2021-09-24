@@ -16,5 +16,5 @@ MSG = 'Hey'
 while len(contatos) >=1:
     pywhatkit.sendwhatmsg(contatos[0], MSG, datetime.now().hour, datetime.now().minute + 2)
     del contatos[0]
-    time.sleep(60)
+    time.sleep(20)
     keyboard.press_and_release('ctrl + w')
